@@ -1,0 +1,41 @@
+
+import random
+import time
+
+words = ["tree", "four", "fire", "road", "eggs"]
+global allowed_errors
+allowed_errors = 6
+def word_pick():
+    global selected_word
+    selected_word = random.choice(words)
+    character_check = len(selected_word)
+    print(selected_word)
+word_pick()
+
+global correct_guesses
+correct_guesses = []
+
+global incorrect_guesses
+incorrect_guesses = []
+
+
+def check_user_guess():
+    global incorrect_guesses
+    global allowed_errors
+    global correct_guesses
+    pick1 = input("What letter would you like to pick?")
+    for char in selected_word:
+        if pick1 not in char:
+            print("Your guess is incorrect!")
+            incorrect_guesses.append(pick1)
+            
+        else:
+            print("You have guessed a letter correctly!")
+            correct_guesses.append(pick1)
+check_user_guess()
+print(correct_guesses)
+print(incorrect_guesses)
+
+
+
+

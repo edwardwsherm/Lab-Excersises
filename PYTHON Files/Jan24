@@ -1,0 +1,17 @@
+list_one = [1,1,3,4,9,11,22,33,45,56,98,101,200]
+list_two = [1,5,7,9,15,20,33,40,41,45,75,88,99,101]
+combined_list = []
+
+for num in list_one:
+    if num in list_two:
+        if num not in combined_list:
+            combined_list.append(num)
+            
+print(combined_list)
+from random import randint
+words = ["tree", "four", "fire", "road", "egg"]
+
+pick1 = randint(0,4)
+c_count1 =len(words[pick1])
+print("There are ",c_count1," characters in the word you must guess.")
+
