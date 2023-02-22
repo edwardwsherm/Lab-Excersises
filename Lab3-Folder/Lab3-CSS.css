@@ -1,0 +1,102 @@
+/*Take the HTML page you submitted for Lab 2
+ and update it with CSS.
+  This may require you to add more HTML elements
+I want to see a mix of local and global styling –
+ for local styling, you should use
+  at least 4 classes and 1 ID
+Use comments to explain which are local & global 
+Use any selectors that we covered in class of your choosing,
+ making sure to incorporate some padding, margins, borders,
+  and height & width
+Use at least 3 CSS styling elements
+ that we did not discuss in class,
+  include a comment to note which ones you chose 
+*/
+
+/*I used the opacity styling element for
+when you hover over the info and links div*/
+
+
+/*I used the border-radius styling element to make the
+image corners rounded*/
+
+/*I also used the box-shadow to give my image a shadow
+if hovered over*/
+* {/*Global*/
+    background-color:lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Header {/*Local*/
+    text-align: center;
+    padding: 10px;
+    color: navy;
+    font-size: x-large;
+
+}
+
+.image {/*Local*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-bottom: 10px;   
+
+}
+img {
+    border-radius: 50%;
+
+}
+img:hover {
+    box-shadow: 0 0 5px 5px rgba(39, 75, 87, 0.5);
+}
+
+.About-and-Links {/*Local*/
+    opacity: .5;
+}
+
+.About-and-Links:hover  {/*Local*/
+    opacity: 1;
+
+}
+
+#prize {/*Local*/
+    text-align: center;
+    border: 1px black solid;
+    width: 25%
+
+}
+
+table, th, td {
+    margin: 10;
+    border: 1px solid;
+    padding: 5px
+}
+
+th {
+    background-color: antiquewhite;
+}
+
+td {
+    background-color: aliceblue;
+}
+
+p {
+    color:rgb(149, 29, 29)
+}
+li {
+    border: 1px dotted;
+    text-align: left;
+    width: 25%;
+    list-style-type:disc;
+    list-style-position: inside;
+    background: rgb(98, 191, 201);
+    padding: 5px 10px
+ 
+}
+
+.in-line {
+    text-align: left;
+    margin: 5px;
+}
